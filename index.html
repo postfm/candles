@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Candles</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -58,9 +58,7 @@
       <section class="top">
         <div class="container top__inner">
           <div class="top__content">
-            <h3 class="title top__title">
-              Создайте атмосферу уюта и гармонии!
-            </h3>
+            <h3 class="top__title">Создайте атмосферу уюта и гармонии!</h3>
             <p class="top__text">
               Создайте особую атмосферу в своем доме с нашей экологически чистой
               и качественной продукцией из 100% натурального соевого воска.
@@ -92,7 +90,7 @@
               здоровья.
             </p>
           </div>
-          <ul class="about__list">
+          <ul class="about__list section--decor">
             <li class="about__item">
               <img
                 src="images/about-1.jpg"
@@ -118,6 +116,24 @@
               <p class="about__item-text">Изготовлены с любовью</p>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="section goods">
+        <div class="container section__inner">
+          <div class="goods__descr section__descr">
+            <h2 class="goods__title title">Наши товары</h2>
+            <p class="goods__text section__text">
+              Мы используем только лучшие качественные материалы: соевый воск,
+              восковые красители, высококачественные ароматические масла и
+              хлопчатобумажные фитильки. Оттенки свеч очень гармонично
+              сочетаются с ароматом, создавая незабываемую атмосферу в вашем
+              доме.
+            </p>
+          </div>
+          <div class="goods__content section__content-descr section--decor">
+            <!-- goods from js -->
+          </div>
         </div>
       </section>
     </main>
@@ -196,6 +212,16 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <template id="goods__item-template">
+      <div class="goods__item">
+        <img src="images/good-2.jpg" alt="" class="goods__item-img" />
+        <p class="goods__item-price">20$</p>
+        <h4 class="goods__item-title">"Вихрь любви"</h4>
+        <p class="goods__item-text"></p>
+        <button class="button">Купить</button>
+      </div>
+    </template>
+
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
