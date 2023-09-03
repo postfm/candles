@@ -34,7 +34,7 @@ button {
 }
 
 .button {
-  padding: 18px 54px;
+  padding: 18px 46px;
   background-color: #ffbd59;
   font-family: "Comfortaa", cursive;
   font-size: 14px;
@@ -322,6 +322,18 @@ button {
   .about__list {
     padding-left: 20px;
   }
+
+  .section__descr {
+    width: 300px;
+  }
+
+  .section__text {
+    font-size: 10px;
+  }
+
+  .goods__content {
+    gap: 67px 67px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -335,6 +347,14 @@ button {
   }
   .footer__social {
     justify-content: center;
+  }
+
+  .section__descr {
+    width: 200px;
+  }
+
+  .goods__content {
+    gap: 30px 16px;
   }
 }
 
@@ -404,6 +424,34 @@ button {
   .about__item-text {
     font-size: 6px;
   }
+
+  .button {
+    font-size: 12px;
+    padding: 11px 27px;
+  }
+  .goods__item {
+    width: 200px;
+  }
+
+  .goods__item-img {
+    width: 188px;
+    margin-bottom: 5px;
+  }
+
+  .goods__item-price {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .goods__item-title {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .goods__item-text {
+    font-size: 8px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -433,6 +481,30 @@ button {
   }
   .header__menu {
     order: 1;
+  }
+
+  .section__inner {
+    flex-direction: column;
+  }
+
+  .section__descr {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .about {
+    margin-bottom: 50px;
+  }
+
+  .section {
+    padding-bottom: 50px;
+  }
+
+  .section__content-descr {
+    padding-bottom: 63px;
   }
 }
 
@@ -516,6 +588,10 @@ button {
   .about__item-img--3 {
     width: 80px;
   }
+
+  .goods__title {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -576,5 +652,38 @@ button {
 
   .about__item-img--3 {
     display: none;
+  }
+
+  .section__descr {
+    width: 235px;
+    margin-bottom: 25px;
+  }
+
+  .goods__item {
+    width: 150px;
+  }
+
+  .goods__item-img {
+    width: 141px;
+  }
+
+  .goods__item-price {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+
+  .goods__item-title {
+    font-size: 10px;
+    margin-bottom: 7px;
+  }
+
+  .goods__item-text {
+    font-size: 6px;
+    margin-bottom: 16px;
+  }
+
+  .button {
+    font-size: 8px;
+    padding: 11px 22px;
   }
 }
