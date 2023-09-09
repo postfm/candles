@@ -342,6 +342,43 @@ button {
   position: absolute;
 }
 
+.team {
+  background-color: #a5978e;
+  padding: 80px 0 60px;
+  color: #ffffff;
+  margin-bottom: 150px;
+}
+
+.team__content {
+  padding-bottom: 0;
+  gap: 75px;
+}
+
+.team__item {
+  position: relative;
+}
+
+.team__item-box {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  width: 170px;
+  padding: 14px 8px 15px;
+  background-color: #7b6152;
+  text-align: center;
+  z-index: 4;
+}
+
+.team__item-name {
+  font-family: Yeseva One;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.team__item-descr {
+  font-size: 10px;
+}
+
 .footer {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -364,20 +401,6 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 15px;
-}
-
-@media (max-width: 1050px) {
-  .steps__list {
-    gap: 35px 35px;
-  }
-
-  .steps__item {
-    gap: 0 30px;
-  }
-
-  .courses__content {
-    gap: 0 30px;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -429,6 +452,18 @@ button {
     height: 225px;
     object-fit: cover;
   }
+
+  .team {
+    padding: 50px 0;
+  }
+
+  .team__content {
+    gap: 30px 20px;
+  }
+
+  .team__title {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -471,6 +506,10 @@ button {
   }
 
   .steps__item::before {
+    font-size: 20px;
+  }
+
+  .team__title {
     font-size: 20px;
   }
 }
@@ -629,6 +668,28 @@ button {
     bottom: 0px;
     right: -4px;
   }
+
+  .team__content {
+    gap: 24px 14px;
+  }
+
+  .team__img {
+    width: 140px;
+  }
+
+  .team__item-box {
+    width: 112px;
+    padding: 10px 6px;
+    right: 0;
+  }
+
+  .team__item-name {
+    font-size: 8px;
+  }
+
+  .team__item-descr {
+    font-size: 6px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -683,6 +744,10 @@ button {
   .section__content-descr {
     padding-bottom: 63px;
   }
+
+  .team__item-box {
+    right: 90px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -699,6 +764,9 @@ button {
   .footer {
     padding: 50px 0;
     font-size: 14px;
+  }
+  .team__item-box {
+    right: 20px;
   }
 }
 
@@ -773,6 +841,14 @@ button {
   .steps__list {
     gap: 25px 40px;
   }
+
+  .team {
+    margin-bottom: 50px;
+  }
+
+  .team__item-box {
+    right: 10px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -802,6 +878,27 @@ button {
 
   .steps__item::before {
     font-size: 12px;
+  }
+  .team__content {
+    grid-template-columns: auto;
+  }
+
+  .team__img {
+    width: 205px;
+  }
+
+  .team__item-box {
+    width: 170px;
+    padding: 14px 8px;
+    left: 148px;
+  }
+
+  .team__item-name {
+    font-size: 12px;
+  }
+
+  .team__item-descr {
+    font-size: 10px;
   }
 }
 
