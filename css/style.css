@@ -491,7 +491,7 @@ button {
   transform: rotate(180deg);
 }
 
-.accordion__text ol {
+.accordion__text-inner {
   padding: 20px 40px;
 }
 
